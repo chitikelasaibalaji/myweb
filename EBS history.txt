@@ -1,0 +1,52 @@
+ 1  fdisk -l
+    2  fsblk
+    3  lsblk
+    4  mkfs.ext4 /dev/xvdf
+    5  mkdir app5
+    6  mount -t ext4 /dev/xvdf app5
+    7  cat /etc/mtab
+    8  vi /etc/fstab
+    9  cd app5
+   10  ls
+   11  touch {a..g}
+   12  ls
+   13  fdisk -l
+   14  lsblk
+   15  mkfs.ext4 /dev/xvdg
+   16  cat /etc/mtab
+   17  vi /etc/fstab
+   18  mkdir app6
+   19  vi /etc/fstab
+   20  cd app6
+   21  ls
+   22  mount -t ext4 /dev/xvdg app6
+   23  ls
+   24  cd..
+   25  cd ..
+   26  cd ..
+   27   mount -t ext4 /dev/xvdg app6
+   28  fdisk
+   29  ls
+   30  cd app5
+   31  ls
+   32  cd ..
+   33  fdisk -l
+   34  lsblk
+   35  mkfs.ext4 /dev/xvdg
+   36  mkdir app7
+   37  mount -t ext4 /dev/xvdg app7
+   38  cat /etc/mtab
+   39  vi /etc/fstab
+   40  cd app7
+   41  ls
+   42  touch {1..8}
+   43  ls
+   44  ls
+   45  cd ..
+   46  ls
+   47  cat app5
+   48  cd app5
+   49  ls
+   50  cd ..
+   51  df -h
+   52  history
