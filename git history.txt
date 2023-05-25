@@ -1,0 +1,212 @@
+   12  ls
+   13  git status
+   14  git add .
+   15  git status
+   16  git commit -m 'r3'
+   17  git log
+   18  git config --global user.name “chitikelasaibalaji”
+   19  git config --global user.email “chitikelasaibalaji@gmail.com”
+   20  git push origin master
+   21  git push origin master
+   22  ls
+   23  touch zen1
+   24  git status
+   25  git add zen1
+   26  git status
+   27  git commit -m 'z2'
+   28  git log
+   29  git push https://github.com/chitikelasaibalaji/myweb.git master
+   30  git pull origin master
+   31  cat zen1
+   32  cat >> zen1
+   33  git push origin master
+   34  git status
+   35  git add .
+   36  git status
+   37  git commit -m 'z3'
+   38  git log
+   39  git push origin master
+   40  git pull origin master
+   41  cat sonar1111
+   42  rm -rf sonar1111
+   43  ls
+   44  ls
+   45  rm -rf rcb
+   46  ls
+   47  rm -rf zen1
+   48  ls
+   49  ls
+   50  ls
+   51  cd myweb/
+   52  ls
+   53  ls
+   54  cd myweb/
+   55  ls
+   56  vi zen1
+   57  git status
+   58  git add .
+   59  git status
+   60  git commit -m 'p2'
+   61  git log
+   62  git push origin master
+   63  rm -rf zen1
+   64  ls
+   65  touch pod
+   66  ls
+   67  git add pod
+   68  git status
+   69  git commit -m 'p1'
+   70  git log
+   71  git fetch origin master
+   72  git merge
+   73  ls
+   74  git push origin master
+   75  rm -rf pod
+   76  ls
+   77  touch copy111
+   78  ls
+   79  git add .
+   80  git status
+   81  git commit -m 'cop'
+   82  git log
+   83  git push origin master
+   84  cat copy111
+   85  git pull origin master
+   86  cat copy111
+   87  ls
+   88  cat copy111
+   89  cat >> copy111
+   90  git status
+   91  git add .
+   92  git status
+   93  git commit -m 'c1'
+   94  git log
+   95  git push https://github.com/chitikelasaibalaji/myweb.git master
+   96  git fetch origin master:master
+   97  git merge
+   98  cat copy111
+   99  git fetch origin master:master
+  100  ls
+  101  git merge
+  102  rm -rf copy111
+  103  ls
+  104  ls
+  105  git pull origin master
+  106  ls
+  107  cat EBS\ history.txt
+  108  ls
+  109  git status
+  110  git add EBS\ history.txt
+  111  git status
+  112  git commit -m 'ebs'
+  113  git merge --abort
+  114  git push origin master
+  115  ls
+  116  rm -rf copy111
+  117  ls
+  118  rm -rf ls
+  119  ls
+  120  cat Dockerfile
+  121  ls
+  122  git status
+  123  ls
+  124  git status
+  125  ls
+  126  cd myweb/
+  127  ls
+  128  touch xerox
+  129  git status
+  130  git add .
+  131  git status
+  132  git commit -m 'x1'
+  133  git log
+  134  git push origin master
+  135  ls
+  136  git status
+  137  git push origin master
+  138  git fetch
+  139  ls
+  140  git push origin master
+  141  rm -rf xerox
+  142  ls
+  143  git status
+  144  git pull origin master
+  145  ls
+  146  cat x11
+  147  touch y222
+  148  git status
+  149  git add .
+  150  git status
+  151  git commit -m 'y1'
+  152  git push origin master
+  153  ls
+  154  rm -rf y222
+  155  ls
+  156  git pull origin master
+  157  git status
+  158  git add .
+  159  git status
+  160  git commit -m 'x1111'
+  161  git push origin master
+  162  ls
+  163  rm -rf x11
+  164  ls
+  165  git clone https://github.com/chitikelasaibalaji/myweb.git
+  166  ls
+  167  cd myweb/
+  168  ls
+  169  cat x11
+  170  cat > x11
+  171  git status
+  172  git checkout x11
+  173  git status
+  174  cat x11
+  175  cat >>x11
+  176  git status
+  177  cat x11
+  178  git add .
+  179  git add .
+  180  git status
+  181  git reset x11
+  182  git status
+  183  cat x11
+  184  git status
+  185  git add .
+  186  git add .
+  187  git status
+  188  git commit -m 'e2'
+  189  git log
+  190  git reset  fc68ab39221665
+  191  git status
+  192  cat x11
+  193  git branch
+  194  git branch dev1
+  195  git branch
+  196  git push origin dev1
+  197  git branch feture
+  198  git branch
+  199  git push origin feture
+  200  git branch
+  201  git branch -d feture
+  202  git branch
+  203  git branch dev2
+  204  git branch
+  205  git push origin dev2
+  206  git branch
+  207  git push origin -d dev2
+  208  git branch
+  209  git branch -d dev2
+  210  git branch
+  211  git branch fet1
+  212  git branch
+  213  git push origin fet1
+  214  git push origin -d feture
+  215  git branch
+  216  git branch
+  217  git checkout dev1
+  218  git branch
+  219  git checkout fet1
+  220  git branch
+  221  git checkout master
+  222  git branch
+  223  history
