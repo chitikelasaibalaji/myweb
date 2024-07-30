@@ -51,7 +51,7 @@ maven "Maven-3.6.1"
 
         stage('Push Docker Image') {
             steps {
-                    docker.withRegistry('https://registry.yourcompany.com', variable: DOCKER_CREDENTIALS_ID) {
+                    docker.withRegistry('https://hub.docker.com/repositories/saibalajich', variable: DOCKER_CREDENTIALS_ID) {
                         docker.image("saibalajich/mobile-calculator:1.0.0").push()
                     }
             }
