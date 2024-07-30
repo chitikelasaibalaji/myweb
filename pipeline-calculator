@@ -37,7 +37,7 @@ maven "Maven-3.6.1"
                     repository: 'sample-releases',
                     credentialsId: NEXUS_CREDENTIALS_ID,
                     artifacts: [
-                        [artifactId: 'mobile-calculator', classifier: '', file: 'target/myweb-1.8.0.war', type: 'war']
+                        [artifactId: 'mobile-calculator', classifier: '', file: 'target/myweb-1.8.0.apk', type: 'apk']
                     ]
                 )
             }
