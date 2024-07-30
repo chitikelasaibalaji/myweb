@@ -1,5 +1,8 @@
 pipeline {
     agent any
+tools{
+maven "Maven-3.6.1"
+}
     stages {
         stage('Checkout') {
             steps {
@@ -28,7 +31,7 @@ pipeline {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    nexusUrl: '172.31.47.139:8081',
+                    nexusUrl: '172.31.47.215:8081',
                     groupId: 'com.yourcompany',
                     version: '1.0.0',
                     repository: 'sample-releases',
