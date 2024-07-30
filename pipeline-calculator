@@ -45,14 +45,14 @@ maven "Maven-3.6.1"
 
         stage('Build Docker Image') {
             steps {
-                    docker.build("saibalajich/mobile-calculator:1.0.0")
+                    docker.build("saibalajich/mobile-calculator:8.2.0")
             }
         }
 
         stage('Push Docker Image') {
             steps {
                     docker.withRegistry('https://hub.docker.com/repositories/saibalajich', variable: DOCKER_CREDENTIALS_ID) {
-                        docker.image("saibalajich/mobile-calculator:1.0.0").push()
+                        docker.image("saibalajich/mobile-calculator:8.2.0").push()
                     }
             }
         }
