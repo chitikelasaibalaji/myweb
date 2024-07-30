@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                // Clone the repository
+                git 'https://github.com/your-repo/mobile-calculator.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Build the application using Maven
+                sh 'mvn clean sonar:sonar packages'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Run unit tests
+                sh 'mvn test'
+            }
+        }
+
+        stage('Publish to Nexus') {
+            steps {
+                // Publish artifacts to Nexus
+                nexusArtifactUploader(
+                    nexusVersion: 'nexus3',
+                    protocol: 'http',
+                    nexusUrl: '172.31.47.139:8081',
+                    groupId: 'com.yourcompany',
+                    version: '1.0.0',
+                    repository: 'sample-releases',
+                    credentialsId: NEXUS_CREDENTIALS_ID,
+                    artifacts: [
+                        [artifactId: 'mobile-calculator', classifier: '', file: 'target/mobile-calculator-1.0.0.war', type: 'war']
+                    ]
+                )
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                    docker.build("saibalajich/mobile-calculator:1.0.0")
+            }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                    docker.withRegistry('https://registry.yourcompany.com', variable: DOCKER_CREDENTIALS_ID) {
+                        docker.image("saibalajich/mobile-calculator:1.0.0").push()
+                    }
+            }
+        }
+    }
+
+  
+    
