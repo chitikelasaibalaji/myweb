@@ -33,11 +33,11 @@ maven "Maven-3.6.1"
                     protocol: 'http',
                     nexusUrl: '172.31.47.215:8081',
                     groupId: 'com.yourcompany',
-                    version: '1.0.0',
+                    version: '8.2.0',
                     repository: 'sample-releases',
                     credentialsId: NEXUS_CREDENTIALS_ID,
                     artifacts: [
-                        [artifactId: 'mobile-calculator', classifier: '', file: 'target/myweb-1.0.0.war', type: 'war']
+                        [artifactId: 'mobile-calculator', classifier: '', file: 'target/myweb-8.2.0.war', type: 'war']
                     ]
                 )
             }
