@@ -16,15 +16,15 @@ pipeline{
 
     stage('Docker Build Image'){
       steps{
-        sh "docker build . -t prashanthi2021/qa:${getLatestCommitId()}"
+        sh "docker build . -t saibalajich/qa:${getLatestCommitId()}"
       }
     }
     
     stage('push to docker hub'){
       steps{
         withCredentials([string(credentialsId: 'docker-hub', variable: 'dockerPwd')]) {
-          sh "docker login -u prashanthi2021 -p ${dockerPwd}"
-          sh "docker push prashanthi2021/qa:${getLatestCommitId()}"
+          sh "docker login -u saibalajich -p ${dockerPwd}"
+          sh "docker push saibalajich/qa:${getLatestCommitId()}"
         }
         
       }
